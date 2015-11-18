@@ -1,0 +1,28 @@
+.wx-footer{
+    padding: 50px 0;
+    background-color: #35B3EE;
+}
+.wx-footer, .wx-footer a{
+    color: #ddd !important;
+}
+
+.uk-panel-box{
+    border: none;
+    background: #eee;
+}
+
+.wx-item .uk-overlay,
+.wx-item .uk-overlay-background{
+    border-radius: 4px;
+}
+
+@media (min-width: 768px){
+    .wx-footer{
+        padding: 70px 0;
+    }
+}
+@media (min-width: 1220px){
+    .wx-footer{
+        padding: 100px 0;
+    }
+}
