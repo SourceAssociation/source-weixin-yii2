@@ -1,6 +1,6 @@
 .wx-footer{
     padding: 50px 0;
-    background-color: #35B3EE;
+    background-color: #34B3C3;
 }
 .wx-footer, .wx-footer a{
     color: #ddd !important;
@@ -16,9 +16,58 @@
     border-radius: 4px;
 }
 
+.scroll-toolbar{
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    z-index: 999;
+}
+.scroll-toolbar a{
+    display: none;
+    opacity: .7;
+}
+.scroll-toolbar a:hover{
+    opacity: 1;
+}
+.scroll-icon-arrow-up:before{
+    content: "\f062";
+    display: inline-block;
+    font: normal normal normal 1.6rem/2 FontAwesome,sans-serif;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.scroll-icon-btn{
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #555;
+    text-align: center;
+}
+.scroll-icon-btn:hover{
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+.scroll-active{
+    display: block!important;
+}
+
 @media (min-width: 768px){
     .wx-footer{
         padding: 70px 0;
+    }
+    .scroll-toolbar{
+        bottom: 10px;
     }
 }
 @media (min-width: 1220px){

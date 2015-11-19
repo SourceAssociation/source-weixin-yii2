@@ -30,10 +30,19 @@ AppAsset::register($this);
     <script src="/tools/uikit/js/uikit.min.js"></script>
     <script src="/tools/uikit/js/components/parallax.min.js"></script>
     <script src="/tools/uikit/js/components/grid.min.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57398d4e921de3dfa4945c67880d4222";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 
 </head>
 <body>
-    <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: '-100', opacity: '0.3'}" style="height: 400px; background-image: url(http://getuikit.com/docs/images/placeholder_800x400_2.jpg); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat;">
+    <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: '-100', opacity: '0.3'}" style="height: 400px; background-image: url(/img/nature.jpg); background-position: 50% 80%; background-size: cover; background-repeat: no-repeat;" id="top">
         <div class="uk-width-medium-1-2" data-uk-parallax="{opacity: '1,0', scale: '1,0.5'}">
             <h1 class="uk-hidden-small uk-text-contrast"><?php echo Yii::$app->params['siteTitle'];?></h1>
             <h2 class="uk-visible-small uk-text-contrast"><?php echo Yii::t('app', 'siteTitle')?></h2>
@@ -55,6 +64,11 @@ AppAsset::register($this);
             </div>
         </div>
     </footer>
+
+    <div class="scroll-toolbar" id="scroll-toolbar">
+        <a href="#top" title="回到顶部" class="scroll-icon-btn scroll-icon-arrow-up" data-uk-smooth-scroll></a>
+    </div>
+    <script src="/js/app.js"></script>
 </body>
 <?php $this->endBody() ?>
 </body>
